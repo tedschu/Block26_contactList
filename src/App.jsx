@@ -10,12 +10,12 @@ export default function App() {
 
     const [selectedContactId, setSelectedContactId] = useState(null);
 
-    //console.log(selectedContactId)
+    console.log(selectedContactId)
 
     return (
       <>
       {selectedContactId ? (
-        <SelectedContact selectedContactId={selectedContactId} setSelectedContactId={selectedContactId} />
+        <SelectedContact selectedContactId={selectedContactId} setSelectedContactId={selectedContactId}/>
       ) : (
         <ContactList setSelectedContactId={setSelectedContactId}/>
       )}
@@ -24,7 +24,7 @@ export default function App() {
 }
 
 
-
+// setSelectedContactId={setSelectedContactId}
 
 
 
